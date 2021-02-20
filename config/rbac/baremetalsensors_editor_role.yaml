@@ -1,0 +1,24 @@
+# permissions for end users to edit baremetalsensors.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: baremetalsensors-editor-role
+rules:
+- apiGroups:
+  - sensors.xana.du
+  resources:
+  - baremetalsensors
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - sensors.xana.du
+  resources:
+  - baremetalsensors/status
+  verbs:
+  - get

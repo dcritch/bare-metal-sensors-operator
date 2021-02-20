@@ -1,0 +1,13 @@
+domain: xana.du
+layout: go.kubebuilder.io/v3
+projectName: bare-metal-sensors-operator
+repo: github.com/dcritch/bare-metal-sensors-operator
+resources:
+- crdVersion: v1
+  group: sensors
+  kind: BareMetalSensors
+  version: v1alpha1
+version: 3-alpha
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}

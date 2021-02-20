@@ -1,0 +1,20 @@
+# permissions for end users to view baremetalsensors.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: baremetalsensors-viewer-role
+rules:
+- apiGroups:
+  - sensors.xana.du
+  resources:
+  - baremetalsensors
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - sensors.xana.du
+  resources:
+  - baremetalsensors/status
+  verbs:
+  - get
