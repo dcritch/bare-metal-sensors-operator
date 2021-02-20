@@ -1,7 +1,7 @@
 # bare-metal-sensors-operator
 An operator for monitoring temperatures of openshift/kubernetes cluster hardware.
 
-Will deploy a custom resource of (bare-metal-sensors)[https://github.com/dcritch/bare-metal-sensors].
+Will deploy a custom resource of [bare-metal-sensors](https://github.com/dcritch/bare-metal-sensors).
 
 ## install
 
